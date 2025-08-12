@@ -1,3 +1,8 @@
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity:1;}
+}
+
 body {
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
@@ -11,20 +16,25 @@ body {
 
 .banner {
   color: white;
-  display: flex;
-  height: 2000px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;
-  background-image: url('./assets/images/main_banner.png');
+    display: flex;
+    height: 620px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../images/main_banner.png);
+    animation-name: appear;
+    animation-duration: 4s;
 }
 
 
 .banner-welcome {
   align-self: center;
+  animation-name: appear;
+  animation-duration: 4s;
 }
     .banner .banner-title {
       font-size: 100px;
+      margin-top: 0;
       margin-bottom: -20px;
     }
     .banner .banner-welcome span {
