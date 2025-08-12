@@ -19,16 +19,22 @@ body {
     display: flex;
     height: 620px;
     justify-content: center;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgb(36 36 44) 47%);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 30%, rgb(16 16 16) 100%);
     animation-name: appear;
     animation-duration: 4s;
 }
-
+  .banner img {
+    height: 300px;
+    align-self: center;
+    rotate: -60deg;
+    margin-bottom: 40px;
+  }
 
 .banner-welcome {
   align-self: center;
   animation-name: appear;
   animation-duration: 4s;
+  margin: 20px;
 }
     .banner .banner-title {
       font-size: 100px;
