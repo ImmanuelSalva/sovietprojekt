@@ -18,10 +18,9 @@ body {
   color: white;
     display: flex;
     height: 620px;
-    background-size: cover;
-    background-repeat: no-repeat;
     justify-content: center;
-    background-image: url(../images/main_banner.png);
+    background: #000000;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 1) 0%, rgba(16, 16, 38, 1) 47%);
     animation-name: appear;
     animation-duration: 4s;
 }
