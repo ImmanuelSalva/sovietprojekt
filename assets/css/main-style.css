@@ -2,6 +2,10 @@
   from {opacity: 0;}
   to {opacity:1;}
 }
+@keyframes navlink-hover {
+  from {opacity: 1;}
+  to {opacity: 0.3;}
+}
 
 body {
   font-family: "Google Sans Code", monospace;
@@ -58,20 +62,37 @@ body {
   animation-name: appear;
   animation-duration: 4s;
   opacity: 1;
+  padding: 30px;
 }
+  .home-nav .web_logo {
+    align-self: center;
+  }
   .home-nav .navbar {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 30px;
+    padding: 0;
   }
     .home-nav .navbar a {
       color: white;
       margin: 30px;
       text-decoration: none;
       font-size: 20px;
-      font-weight: 600;
+      font-weight: 500;
+      position: relative;
     }
-      .home-nav .navbar a:hover {
-        text-decoration: underline;
+      .home-nav .navbar a:before {
+        content: '';
+        background-color: #ff1f1fbe;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        width: 100%;
+        height: 8px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
       }
+        .home-nav .navbar a:hover::before {
+          bottom: 0;
+          height: 100%;
+        }
