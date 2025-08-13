@@ -4,24 +4,30 @@
 }
 
 body {
-  font-family: "Mozilla Headline", sans-serif;
+  font-family: "Google Sans Code", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: black;
-  font-variation-settings:
-    "wdth" 100;
   margin: 0;
+  background: black;
 }
 
 .banner {
   color: white;
-    display: flex;
-    height: 620px;
-    justify-content: center;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 30%, rgb(16 16 16) 100%);
-    animation-name: appear;
-    animation-duration: 4s;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  height: 620px;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 30%, rgb(16 16 16) 100%);
+  animation-name: appear;
+  animation-duration: 4s;
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+      "wdth" 100;
 }
   .banner img {
     height: 300px;
@@ -61,4 +67,8 @@ body {
       margin: 30px;
       text-decoration: none;
       font-size: 20px;
+      font-weight: 600;
     }
+      .home-nav .navbar a:hover {
+        text-decoration: underline;
+      }
