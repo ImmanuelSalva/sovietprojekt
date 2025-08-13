@@ -45,3 +45,20 @@ body {
       margin-left: 15px;
       font-size: 18px;
     }
+
+.home-nav {
+  display: flex;
+  animation-name: appear;
+  animation-duration: 4s;
+  opacity: 1;
+}
+  .home-nav .navbar {
+    display: flex;
+    list-style-type: none;
+  }
+    .home-nav .navbar a {
+      color: white;
+      margin: 30px;
+      text-decoration: none;
+      font-size: 20px;
+    }
